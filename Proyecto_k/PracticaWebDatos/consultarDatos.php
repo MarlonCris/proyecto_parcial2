@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
 </head>
-<body>
+<body  background="imagenes/ff.jpg">
 
     <?php
       include 'conexion.php';

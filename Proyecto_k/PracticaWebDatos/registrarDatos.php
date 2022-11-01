@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
 </head>
-<body>
+<body  background="imagenes/reg.jpg">
     <?php include 'menu.php'; ?>
     <br>
     <div class="container">

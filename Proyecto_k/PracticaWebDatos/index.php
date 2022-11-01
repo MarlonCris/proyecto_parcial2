@@ -7,16 +7,28 @@
     <title>Práctica de web con bases de datos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
+
+   <style>
+
+   </style>
 </head>
-<body>
+<body  background="imagenes/fond.jpg">
     <?php include 'menu.php'; ?>
     <br>
-
-    <img class="d-block w-2" src="imagenes/cafeteria.png" alt="">
-    <div class="container">
+ 
+      <center>
+      <img src="imagenes/a1.png" title="sep" width="800px" height="150px">
+ 
+      </center>
+      <center>
+      <img src="imagenes/panel.png" title="sep" width="1110px" height="70px">
+       </center>
+    
+     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="jumbotron">
+                  <h1 style="color: #FF5733;">Menu principal</h1>
                     <h1 class="display-4">Cetis 107</h1>
                     <p class="lead">
                         
@@ -65,11 +77,14 @@
 </div>
                     </p>
                     <hr class="my-4">
-                    <p>Esta práctica pertenece al parcial #1</p>
+                    <p>Pagina oficial CETIS107</p>
                   </div>
             </div>
         </div>
     </div>
+    
+ 
+
     <footer class="text-center">
         <hr>
         2022 &copy; Cetis107 Desarrollo Web
