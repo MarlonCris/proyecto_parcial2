@@ -32,7 +32,7 @@ $conexion->close();
 
 ?>
 
-<img src="imagenes/a.jpg" title="sep" width="500px" height="150px">
+ 
     
  </body>
  </html>

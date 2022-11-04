@@ -39,16 +39,27 @@
                     </thead>
                     <tbody>
                       <?php if($datos->num_rows > 0) { 
+
                           while($row = $datos->fetch_assoc()) {
                       ?>
                         <tr>
                             <td><?php echo $row["id"]; ?></td>
                             <td><?php echo $row["nombre"]; ?></td>
                             <td><?php echo $row["edad"]; ?></td>
-                            <td><?php echo $row["sexo"]; ?></td>
+                             
+                            <?php if($row["sexo"] == 1) {?>
+                                
+                                <td><?php echo"masculino"?></td>
+                        <?php } else{ ?>
+                            
+                            <td><?php echo"Femenino"?></td>
+                       <?php } ?> 
+                     
+    
                             <td><?php echo $row["domicilio"]; ?></td>
                             <td><?php echo $row["fecha_nacimiento"]; ?></td>
                             <td>
+                          
                                 <a href="actualizarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a>
                                 <a href="eliminarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">Eliminar</a>
                             </td>
