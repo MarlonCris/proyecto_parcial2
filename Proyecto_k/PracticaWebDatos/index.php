@@ -6,29 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica de web con bases de datos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/jquery-3.6.1.js"></script>
+     
+    <link rel="stylesheet" href="Documento.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
 
-   <style>
+   <style> 
+       a{
+        color: red;
+       } 
 
    </style>
 </head>
-<body  background="imagenes/fond.jpg">
+<body class="body1"> 
     <?php include 'menu.php'; ?>
     <br>
+  
+    <div class="row">
+    <div class="col-sm-4">
+    <img src="imagenes/sep.png" class="card-img-top" alt="..." width="1000px" height="150px">
+    </div>
+     
+  </div>
+   
+
+  
+
+
+
+      <p class="texto_animado">
+          !Bienvenido¡  que estas buscando<br>
+          
+      </p>
+
  
-      <center>
-      <img src="imagenes/a1.png" title="sep" width="800px" height="150px">
- 
-      </center>
-      <center>
-      <img src="imagenes/panel.png" title="sep" width="1110px" height="70px">
-       </center>
-    
      <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="jumbotron">
-                  <h1 style="color: #FF5733;">Menu principal</h1>
+                  <h1>Menu principal</h1>   
                     <h1 class="display-4">Cetis 107</h1>
                     <p class="lead">
                         
@@ -40,11 +56,20 @@
                             <li>Editar</li>
                             <li>Eliminar</li>
                             <h2>Modulos</h2>
-                            <a class="dropdown-item" href="index.php">Inicio</a>
-      
-                            <a class="dropdown-item" href="consultarDatos.php">Consultar alumnos</a>
-                         </ul>
+                            
 
+                             
+                            <a class="btn btn-primary" href="index.php">Inicio</a> 
+
+                            <a class="btn btn-primary" href="registrarDatos.php">Agregar nuevo alumno</a>
+
+                            <a class="btn btn-primary" href="consultarDatos.php">Consultar alumnos</a>
+
+                            <a class="btn btn-primary" href="Alumnos.php">Alumnos destacados</a>
+                            
+                          </ul>
+                  
+ 
 
                          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -90,5 +115,55 @@
         2022 &copy; Cetis107 Desarrollo Web
     </footer>
     <script src="js/bootstrap.js"></script>
+   <script>
+    Swal.fire({
+  title: '<strong>Terminos y<u> condiciones</u></strong>',
+  icon: 'info',
+  html:
+    'Holas por favor acepta nuestros terminos y<b> condiciones.</b>, ' +
+    '<a href="terminos.php">Terminos y condiciones</a> ' +
+    'de CETIS107',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up">Aceptar</i> ',
+  confirmButtonAriaLabel: '',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down">No gracias</i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
+   </script>
+  
+    <?php
+    
+    
+echo "<script>
+ 
+
+Swal.fire({
+  title: '<strong>HTML <u>example</u></strong>',
+  icon: 'info',
+  html:
+    'You can use <b>bold text</b>, ' +
+    '<a href='//sweetalert2.github.io'>links</a> ' +
+    'and other HTML tags',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class='fa fa-thumbs-up'></i> Great!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class='fa fa-thumbs-down'></i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
+
+</script>";
+?>
+
+
+<script src="js/jquery-3.6.1.js"></script>
 </body>
 </html>
+ 

@@ -7,8 +7,12 @@
     <title>Práctica de web con bases de datos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="Documento.css">
+    <link rel="stylesheet" href="tablas.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
-<body  background="imagenes/ff.jpg">
+<body class="body1">
 
     <?php
       include 'conexion.php';
@@ -79,5 +83,18 @@
         2022 &copy; Cetis107 Desarrollo Web
     </footer>
     <script src="js/bootstrap.js"></script>
+
+<?php
+    echo "<script>
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Consutario de alumnos',
+  showConfirmButton: false,
+  timer: 1500
+})
+</script>";
+?>
+
 </body>
 </html>

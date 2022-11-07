@@ -7,8 +7,11 @@
     <title>Búsqueda</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="Documento.css">
+    <link rel="stylesheet" href="tablas.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body  background="imagenes/fond.jpg">
+<body class="body1">
     <?php
         include 'conexion.php';
         include 'menu.php';
@@ -30,6 +33,8 @@
             echo "<br><div class='alert alert-danger'>No existen registros con ese término de búsqueda</div><br><br>";
         } else {
     ?>
+<br>
+<button type="button" class="btn btn-primary"><h2><b> Resultado de la busqueda </b></h2><hr></button> 
         <table class="table table-hover">
             <thead>
                 <th>ID</th>
@@ -57,7 +62,19 @@
             </tbody>
         </table>
 
+
     <?php } } ?>
+  
+
+<script>
+    Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'No se encontraron resultados con ese nombre',
+  footer: '<a href="index.php">Quieres regresar a inicio?</a>'
+  
+})
+</script>
                 </div></div></div>
     <script src="js/bootstrap.js"></script>
 </body>
